@@ -13,7 +13,7 @@ namespace SimpleAPI.TEST
         public void Test1()
         {
             var returnValue = controller.Get(1);
-            Assert.Equal("Freezing", returnValue.Value);
+            Assert.Equal("Hello PTEC Team", returnValue.Value);
 
         }
     }

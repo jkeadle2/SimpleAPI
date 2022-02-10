@@ -26,13 +26,6 @@ namespace SimpleAPI.Controllers
             return "Hello PTEC Team";
         }
 
-        //POST api/values
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-
-        }
-
-
+        
     }
 }
