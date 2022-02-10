@@ -7,22 +7,32 @@ using Microsoft.Extensions.Logging;
 
 namespace SimpleAPI.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
+    
+    [Route("api/values")]
+   // [ApiController]
     public class WeatherForecastController : ControllerBase
     {
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "demo", "test"};
+            return new string[] {"value1", "value2"};
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return "Freezing";
+            return "Hello PTEC Team";
         }
+
+        //POST api/values
+        [HttpPost]
+        public void Post([FromBody] string value)
+        {
+
+        }
+
+
     }
 }
